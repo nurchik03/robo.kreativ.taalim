@@ -717,6 +717,9 @@ select.class-filter {
   .sidebar-close { display: inline-flex; }
   .sidebar-overlay.show { display: block; }
   .page-header { padding-left: 44px; }
+    .sidebar {
+    padding-top: 64px;   /* ← сдвигаем содержимое sidebar ниже кнопки */
+  }
 }
 
 @media (max-width: 600px) {
