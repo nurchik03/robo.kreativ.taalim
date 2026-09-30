@@ -62,12 +62,14 @@ const Router = (() => {
     });
   }
 
-  function start() {
-    window.addEventListener("hashchange", render);
-    if (!window.location.hash) window.location.hash = "#/";
-    else render();
-    if (window.location.hash === "#/") render();
+function start() {
+  window.addEventListener('hashchange', render);
+  if (!window.location.hash) {
+    window.location.hash = '#/';
+  } else {
+    render();
   }
+}
 
   return { register, start, render };
 })();
